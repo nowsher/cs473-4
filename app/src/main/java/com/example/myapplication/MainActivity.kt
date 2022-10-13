@@ -49,8 +49,14 @@ class MainActivity : AppCompatActivity() {
 //                editTextEmail.text.clear()
 //                editTextPassword.text.clear()
 
+
+//                var tmpUser: UserAccount? = userList.find {
+//                    it.userEmail.equals(tmpName)
+//                }
+
                 val intent = Intent(this, ShopCategoriesActivity::class.java)
                 intent.putExtra("email", tmpName)
+//                intent.putExtra("name", tmpUser?.firstName)
                 startActivity(intent);
             }
 

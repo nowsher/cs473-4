@@ -12,7 +12,7 @@ class ShopCategoriesActivity : AppCompatActivity() {
 
         val rcvIntent = intent //getIntent()
         val output = rcvIntent.getStringExtra("email")
-//        textViewTitle.text = textViewTitle.text.toString() + " " + output
+        textViewWelcome.text = "Welocme $output"
 
         imageViewElec.setOnClickListener{
             Toast.makeText(this, "You have chosen Electronics.", Toast.LENGTH_LONG).show()
